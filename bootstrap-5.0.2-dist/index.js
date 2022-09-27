@@ -21,7 +21,7 @@ const contador = (tiempoLimite,elem,finalMessage) =>{
     const timer= setInterval(() => {
         let t= getCumple(tiempoLimite);
         console.log(t.restosec);
-        el.innerHTML=`${t.restodia} | :${t.restohora}   |   :${t.restomin}   |   :${t.restosec}`;
+        el.innerHTML=`     ${t.restodia}       #               ${t.restohora}         #        ${t.restomin}         `;
         if(t.timeresto <= 1){
             clearInterval(timer);
             el.innerHTML= finalMessage;
